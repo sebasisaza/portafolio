@@ -1,0 +1,123 @@
+<header>
+  <img src="https://icon-library.com/images/code_icon_png_296525.jpg" alt="" />
+
+  <div>
+    <span (click)="onScrollTo(about)">ABOUT</span>
+    <span (click)="onScrollTo(experience)">EXPERIENCE</span>
+    <span (click)="onScrollTo(contact)">CONTACT</span>
+  </div>
+</header>
+<body>
+  <div class="container">
+    <div #about class="about">
+      <img src="/assets/img/1611229595694.png" alt="" />
+
+      <div>
+        <span class="title">FULL STACK DEVELOPER</span>
+        <span class="info">
+          Hello, I'm Sebastian Isaza Fullstack Developer with 8 years of
+          experience. I've been building stuff on the web for several years,
+          working with clients across various countries and industries.
+          Knowledge in user interface, testing and debugging processes. Able to
+          effectively self-manage during independent projects, accomplish the
+          set goals, as well ascollaborate as part of a team.</span
+        >
+        <button class="download" (click)="onDonwload()">Download CV</button>
+      </div>
+    </div>
+
+    <div #experience class="experience">
+      <span class="title">EXPERIENCE</span>
+      <div>
+        <div class="experience-detail">
+          <div class="dates">
+            <span>Nov 2021 - Current</span>
+          </div>
+          <div class="detail">
+            <span
+              >Working mostly as a front-end developer making a re-skin of old
+              application to a new one migrating to Angular 14 and also moving
+              some services to Node.js.</span
+            >
+          </div>
+        </div>
+
+        <div class="experience-detail row">
+          <div class="dates">
+            <span>Oct 2021 - Nov 2021</span>
+          </div>
+          <div class="detail">
+            <span
+              >Fixing bugs and adding new features to an ecommerce platform,
+              also made some styles adjustments following the designs.</span
+            >
+          </div>
+        </div>
+
+        <div class="experience-detail">
+          <div class="dates">
+            <span>Mar 2021 - Sep 2021</span>
+          </div>
+          <div class="detail">
+            <span
+              >Analyze requirements and provide support to the customer loyalty
+              application by managing points.</span
+            >
+          </div>
+        </div>
+
+        <div class="experience-detail row">
+          <div class="dates">
+            <span>Apr 2019 - Mar 2021</span>
+          </div>
+          <div class="detail">
+            <span
+              >Support and add new features for a web application for
+              controlling routes and vehicles.</span
+            >
+          </div>
+        </div>
+
+        <div class="experience-detail">
+          <div class="dates">
+            <span>Nov 2016 - Oct 2018</span>
+          </div>
+          <div class="detail">
+            <span
+              >Support and add new features for mall web application to manage
+              users and stores.</span
+            >
+          </div>
+        </div>
+
+        <div class="experience-detail row">
+          <div class="dates">
+            <span>Dec 2015 - Jun 2016</span>
+          </div>
+          <div class="detail">
+            <span
+              >Adding new features to an insurance company application.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div #contact class="contact">
+      <div class="mail">
+        <i class="fa-regular fa-envelope fa-2x"></i>
+        <span>sebasisaza_27@hotmail.com</span>
+      </div>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/sebastian-isaza/" target="_blank">
+          <i class="fa-brands fa-linkedin-in fa-2x"></i>
+        </a>
+      </div>
+      <div class="github">
+        <a href="https://github.com/sebasisaza" target="_blank">
+          <i class="fa-brands fa-square-github fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
