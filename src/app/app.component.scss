@@ -67,6 +67,10 @@ body {
         flex-direction: row;
         align-items: center;
         gap: 10px;
+
+        i {
+          margin-top: 2px;
+        }
       }
 
       .download {
@@ -198,9 +202,13 @@ body {
 
 @media (width > 300px) {
   header {
+    img {
+      height: 50px;
+      margin-right: 20px;
+    }
     div {
       span {
-        font-size: 15px;
+        font-size: 8px;
       }
     }
   }
