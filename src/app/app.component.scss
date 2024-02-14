@@ -61,6 +61,14 @@ body {
         text-align: -webkit-center;
       }
 
+      .mail-info {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+
       .download {
         margin-top: 20px;
         width: 200px;
@@ -96,7 +104,6 @@ body {
       .experience-detail {
         background: #e8e8e8;
         width: 100%;
-        height: 120px;
         display: grid;
         grid-template-columns: 1fr;
 
@@ -120,6 +127,12 @@ body {
           }
         }
 
+        .stack {
+          display: flex;
+          justify-content: center;
+          color: #676767;
+        }
+
         &.row {
           background: #fff;
         }
@@ -134,14 +147,32 @@ body {
 
   .contact {
     width: 100%;
-    height: 200px;
+    height: 90px;
     background: #1a1a65;
     color: #fff;
     display: grid;
     grid-template-columns: 1fr;
 
+    a {
+      color: white;
+    }
+
     a:visited {
-      color: inherit;
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      text-decoration: none;
+      color: white;
+    }
+    a:focus {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover,
+    a:active {
+      text-decoration: none;
+      color: white;
     }
 
     div {
@@ -156,10 +187,6 @@ body {
 
     .mail {
       flex-direction: column;
-
-      span {
-        font-size: 12px;
-      }
     }
   }
 }
@@ -167,6 +194,56 @@ body {
 .title {
   font-size: 30px;
   text-align: center;
+}
+
+@media (width > 300px) {
+  header {
+    div {
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+
+  body {
+    .experience {
+      width: 100%;
+      div {
+        .experience-detail {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          div {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .dates {
+              justify-content: center;
+            }
+
+            .detail {
+              span {
+                text-align: inherit;
+              }
+            }
+          }
+
+          .stack {
+            font-size: 14px;
+            font-style: italic;
+            display: flex;
+            justify-content: center;
+            color: #676767;
+          }
+        }
+      }
+    }
+
+    .contact {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
 }
 
 @media (width > 600px) {
@@ -180,18 +257,80 @@ body {
 
   body {
     .experience {
+      width: 100%;
       div {
         .experience-detail {
-          grid-template-columns: 1fr 1fr;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
 
-          .dates {
-            justify-content: center;
+          div {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .dates {
+              justify-content: center;
+            }
+
+            .detail {
+              span {
+                text-align: inherit;
+              }
+            }
           }
 
-          .detail {
-            span {
-              text-align: inherit;
+          .stack {
+            display: flex;
+            justify-content: center;
+            color: #676767;
+          }
+        }
+      }
+    }
+
+    .contact {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media (width > 900px) {
+  header {
+    div {
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+
+  body {
+    .experience {
+      width: 100%;
+      div {
+        .experience-detail {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .dates {
+              justify-content: center;
             }
+
+            .detail {
+              span {
+                text-align: inherit;
+              }
+            }
+          }
+
+          .stack {
+            display: flex;
+            justify-content: center;
+            color: #676767;
           }
         }
       }
