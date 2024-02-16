@@ -81,14 +81,21 @@ body {
         height: 40px;
         border: none;
         background: #1a1a65;
-        border-radius: 10px;
+        border-radius: 5px;
         color: white;
         font-size: 15px;
-        box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
 
         &:hover {
-          cursor: pointer;
-          background: #1a1a65;
+          background: #343496;
+          border: 1px solid #343496;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
         }
       }
     }
