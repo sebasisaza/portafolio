@@ -2,6 +2,7 @@
   padding: 0% 5%;
 
   .about {
+    margin: 5%;
     h1 {
       color: #8296bb;
       font-weight: 100;
@@ -15,7 +16,6 @@
     .experience-card {
       gap: 30px;
       margin: 5%;
-      padding: 2%;
 
       &:hover {
         background-color: #1d2e5e;
@@ -79,7 +79,6 @@
     .project-card {
       gap: 30px;
       margin: 5%;
-      padding: 2%;
 
       .title-header {
         display: flex;
