@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="about" id="about">
+    <h1>
+      Full Stack developer with over 8 years of experience developing web
+      applitcations for differents kind of companies, knowledge in user
+      interface, testing and debugging processes, able to effectively
+      self-manage during tight deadlines and complex projects, ensuring
+      high-quality results.
+      <br />
+      <br />
+      Capable to work as a part of a team and also able to work by my self in a
+      particular tasks. Committed to accomplish each of the goals proposed for
+      the stakeholders in differents projects.
+    </h1>
+  </div>
+
+  <div class="experience" id="experience">
+    <div class="experience-card" *ngFor="let experience of experiences">
+      <div class="dates">
+        <span>{{ experience.dates }}</span>
+      </div>
+      <div class="info">
+        <h3>{{ experience.position }} - {{ experience.company }}</h3>
+        <span>{{ experience.description }}</span>
+        <div class="stack">
+          <span *ngFor="let skill of experience.skills">{{ skill }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects" id="projects">
+    <a
+      href="{{ project.url }}"
+      target="_blank"
+      *ngFor="let project of projects"
+    >
+      <div class="project-card">
+        <div class="title-header">
+          <h2>{{ project.project }}</h2>
+          <i class="fa-solid fa-square-arrow-up-right"></i>
+        </div>
+        <div>
+          <span>{{ project.description }}</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
