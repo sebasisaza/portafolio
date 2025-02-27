@@ -5,16 +5,16 @@ div {
   display: grid;
   grid-template-columns: 1fr;
   height: 100vh;
-
-  right-side {
-    overflow-y: auto;
-    height: 100vh;
-  }
 }
 
 @media (width > 1024px) {
   div {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  right-side {
+    overflow-y: auto;
+    height: 100vh;
   }
 }
