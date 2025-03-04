@@ -125,8 +125,6 @@ export class RightSideComponent implements OnInit {
 
   ngOnInit() {
     this.sharedService.selectedOption$.subscribe((option) => {
-      console.log(option);
-
       const target =
         option === 1
           ? 'about'
@@ -136,10 +134,14 @@ export class RightSideComponent implements OnInit {
           ? 'projects'
           : '';
 
-      const element = document.getElementById(target);
-      if (option && element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      this.onScroll(target);
     });
+  }
+
+  public onScroll(target: string): void {
+    const element = document.getElementById(target);
+    if (target && element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

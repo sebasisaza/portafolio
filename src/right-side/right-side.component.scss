@@ -135,6 +135,10 @@
 .bouncing-icon {
   display: inline-block;
   animation: bounce 0.5s infinite ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @media (width > 1024px) {
