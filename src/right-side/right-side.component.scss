@@ -46,15 +46,15 @@
           font-weight: 500;
         }
 
-        span {
-          margin-top: 8px;
-          font-size: 1rem;
-          font-weight: 100;
+        ul {
+          padding-left: 20px;
+          li {
+            margin-bottom: 5px;
+          }
         }
       }
 
       .stack {
-        margin-top: 10px;
         display: flex;
         justify-content: start;
         gap: 15px;

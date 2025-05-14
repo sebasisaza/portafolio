@@ -27,7 +27,11 @@
       </div>
       <div class="info">
         <h3>{{ experience.position }} - {{ experience.company }}</h3>
-        <span>{{ experience.description }}</span>
+        <ul>
+          <li *ngFor="let description of experience.description">
+            {{ description }}
+          </li>
+        </ul>
         <div class="stack">
           <span *ngFor="let skill of experience.skills">{{ skill }}</span>
         </div>

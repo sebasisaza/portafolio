@@ -16,11 +16,12 @@ export class RightSideComponent implements OnInit {
       dates: '2021 Nov - PRESENT',
       position: 'Full Stack Developer',
       company: 'Uruit/Nearsure',
-      description:
-        'Working with a U.S. client on modernizing an existing application by\
-          redesigning the UI and migrating it to Angular 14. Additionally,\
-          refactoring and transitioning backend services to Node.js for improved\
-          performance and scalability.',
+      description: [
+        'Migrated legacy front-end codebases to modern Angular architecture, improving maintainability and user experience.',
+        'Developed and maintained a web application using Angular, focusing on performance, scalability, and responsive design.',
+        'Implemented advanced NgRx state management to handle complex UI interactions and asynchronous data flows.',
+        'Wrote comprehensive unit tests with Jest, ensuring high code coverage and application stability.',
+      ],
       skills: [
         'Angular',
         'TypeScript',
@@ -34,59 +35,66 @@ export class RightSideComponent implements OnInit {
       dates: '2021 Oct - 2021 Nov',
       position: 'Full Stack Developer',
       company: 'ITGlobers',
-      description:
-        'Collaborated with the team to resolve bugs, implement new features,\
-          and refine styles for an eCommerce platform, ensuring alignment with\
-          design specifications.',
-      skills: ['Angular', '.NET'],
+      description: [
+        'Analyze project requirements, translating specifications into functional application components.',
+        'Added and maintained AWS Lambda functions to ensure reliable and efficient system operation.',
+        'Added and modified frontend components to meet design requirements.',
+        'Used GitHub Actions to test and deploy the web application.',
+      ],
+      skills: ['Angular', '.NET', 'AWS'],
     },
     {
       dates: '2021 Mar - 2021 Sep',
       position: 'Full Stack Developer',
       company: 'XpertGroup',
-      description:
+      description: [
         'Worked with a client on a customer loyalty application that rewarded\
           users with points, which could later be redeemed for products, trips,\
           and other benefits.',
+      ],
       skills: ['Angular', 'Node.js', 'AWS (Lambda)', '.NET'],
     },
     {
       dates: '2019 Apr - 2021 Mar',
       position: 'Full Stack Developer',
       company: 'ControlT',
-      description:
+      description: [
         'Worked with a client on a web application for vehicle route\
           management, including GPS tracking, route planning, route alerts, and\
           advanced alert configuration.',
+      ],
       skills: ['.NET', 'AngularJs', 'Vue.js', 'AWS (Dynamo)'],
     },
     {
       dates: '2019 Feb - 2019 Apr',
       position: 'Backend Developer',
       company: 'Outsourcing',
-      description:
+      description: [
         'Worked at a company providing support for an application used in call\
           center management.',
+      ],
       skills: ['.NET', 'SQL SERVER'],
     },
     {
       dates: '2016 Nov - 2018 Oct',
       position: 'Full Stack Developer',
       company: 'Cinnco',
-      description:
+      description: [
         'Worked on multiple projects, leading the development from\
           requirements gathering to the complete implementation of management\
           systems for accounting, accounts receivable, inventory, and\
           invoicing.',
+      ],
       skills: ['PHP', 'Laravel', 'JavaScript', 'HTML', 'SCSS'],
     },
     {
       dates: '2015 Dec - 2016 Jun',
       position: 'Junior Developer',
       company: 'Indra',
-      description:
+      description: [
         'Worked on gathering and defining functional requirements for a\
           well-known company in the insurance sector.',
+      ],
       skills: ['PL/SQL', 'AngularJs'],
     },
   ];
