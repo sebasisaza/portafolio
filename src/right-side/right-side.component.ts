@@ -127,6 +127,16 @@ export class RightSideComponent implements OnInit {
         'I worked supporting a rewards program that rewards customer loyalty by allowing users to accumulate points with purchases made using their credit cards.',
       url: 'https://www.puntoscolombia.com/personas/inicio',
     },
+    {
+      project: 'Custom Tabs',
+      description: 'This project implements a fully reusable custom tabs component in Angular that allows dynamic rendering using a clean and modular SCSS/CSS styling',
+      url: 'https://fillout-8w6d.onrender.com/'
+    },
+    {
+      project: 'Angular Template',
+      description: 'This project serves as a starter Angular template designed for scalable web application development. It includes a modular architecture, reusable components, and essential tooling to accelerate development while maintaining code quality and consistency.',
+      url: 'https://angular-template-tdpk.onrender.com/'
+    }
   ];
 
   constructor(private sharedService: SharedService) {}
