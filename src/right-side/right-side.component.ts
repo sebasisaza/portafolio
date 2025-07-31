@@ -122,6 +122,11 @@ export class RightSideComponent implements OnInit {
       url: 'https://controlt.io/',
     },
     {
+      project: 'Real Estate Listings Web App',
+      description: 'I developed a fully functional real estate web application using Angular to showcase my front-end development skills. hile the data is currently hardcoded for demonstration purposes, the architecture is built to support integration with real APIs in the future.',
+      url: 'https://real-state-cbor.onrender.com/'
+    },
+    {
       project: 'Puntos Colombia',
       description:
         'I worked supporting a rewards program that rewards customer loyalty by allowing users to accumulate points with purchases made using their credit cards.',
